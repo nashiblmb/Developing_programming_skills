@@ -1,6 +1,10 @@
 /*
     Nashib Limbu
-
+    
+    This code is an implementation of the brute force attack on an Affine cipher. 
+    It takes the ciphertext as input, converts it to uppercase, and then iterates through all possible combinations of alpha and beta keys to find the plain text. 
+    The code also includes functions for calculating the inverse modular and performing the extended Euclidean algorithm. 
+    
     The code works but it isn't in order of probability but is instead random, I tested 5 different ciphers alongside my own and here are the keys to find them on the list:
 
     RTJJHZTHPMCTUMFNHMFXUNXQT A:3 B:7       --this is the the cipher given to crack
