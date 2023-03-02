@@ -3,6 +3,23 @@
     Affine cipher project during university
 */
 
+
+/*
+The given code implements the Affine cipher, a type of monoalphabetic substitution cipher that uses mathematical equations to encrypt and decrypt messages. 
+The Affine cipher is a combination of two mathematical equations, namely y = a*x + b mod 26 and x = (y - b) * a^-1 mod 26. 
+
+The first equation is used for encryption, where y represents the encrypted letter, x represents the plaintext letter, a and b are the encryption keys, 
+and mod 26 is used to ensure the resulting value is within the range of 0 to 25.
+The second equation is used for decryption, where a^-1 is the modular inverse of a, and y represents the ciphertext letter.
+
+The program takes user input for plaintext/ciphertext and allows the user to choose between encryption and decryption. 
+The user can also choose the encryption keys for the affine cipher. 
+The program uses functions to convert plaintext to uppercase letters, encrypt plaintext using the affine cipher, 
+decrypt ciphertext using the affine cipher, and calculate the modular inverse of a using the extended Euclidean algorithm. 
+
+The program also uses a loop to allow the user to repeatedly encrypt/decrypt or exit the program.
+
+*/
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
